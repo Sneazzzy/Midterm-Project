@@ -1,0 +1,65 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>My Website/Porfolio</title>
+        <link rel="stylesheet" href="Favorites.css">
+        <script></script>
+    </head>
+    <body>
+       
+        <nav id="navbar">
+            <ul>
+                <li> <a href="index.html">Homepage</a></li>
+                <li> <a href="Porfolio.html">Portfolio</a></li>
+                <li><a href="Favorites.html">Favorites</a></li>
+            </ul>
+        </nav>
+
+        <div class="grid">
+            <ul>
+                <li>
+                    <h3>Hyundai i20 N Rally Car</h3>
+                    <img src="wrc.jpg">
+                    <button class="comment-btn" onclick="openModal('wrc.jpg')">Add Comment</button>
+                </li>
+                <li>
+                    <h3>Toyota GR Yaris</h3>
+                    <img src="GR.jpg">
+                    <button class="comment-btn" onclick="openModal('GR.jpg')">Add Comment</button>
+                </li>
+                <li>
+                    <h3>Mazda RX-7</h3>
+                    <img src="rx-7.jpg">
+                    <button class="comment-btn" onclick="openModal('rx-7.jpg')">Add Comment</button>
+                </li>
+                <li>
+                    <h3>Red Bull Racing Formula 1 Car</h3>
+                    <img src="red-bull.jpg">
+                    <button class="comment-btn" onclick="openModal('red-bull.jpg')">Add Comment</button>
+                </li>
+                <li>
+                    <h3>Toyota 4A-GE Engine</h3>
+                    <img src="R.jpg">
+                    <button class="comment-btn" onclick="openModal('R.jpg')">Add Comment</button>
+                </li>
+                <li>
+                    <h3>Honda CB750 Café Racer</h3>
+                    <img src="Honda-CB400F.jpg">
+                    <button class="comment-btn" onclick="openModal('Honda-CB400F.jpg')">Add Comment</button>
+                </li>
+            </ul>
+        </div>
+
+            <div id="commentModal" class="modal">
+                <div class="modal-content">
+                    <textarea id="commentInput" placeholder="Enter your comment..."></textarea>
+                    <div class="modal-buttons">
+                        <button onclick="sendComment()">Send</button>
+                        <button onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+        <script src="Favorites.js"></script>
+    </body>
+      
